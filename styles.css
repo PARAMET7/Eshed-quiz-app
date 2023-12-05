@@ -41,21 +41,22 @@
 }
 
 .game {
-  position: absolute;
-  margin-bottom: 110px;
-  margin-left: -150px;
+  position:absolute;
+  margin-bottom: 0px;
+  margin-left: -160px;
   display: flex;
-
+  justify-content:flex-end;
   padding: 5px;
   color: #e2930a;
   background-color:var(--color-primary);
   border-radius: 5px;
 }
 
+
 .game1 {
   position: relative;
-  margin-bottom: -100px;
-  margin-left: -70px;
+  margin-bottom: -1px;
+  margin-left: -80px;
   display: flex;
   justify-content:flex-end;
   padding: 5px;
@@ -68,7 +69,7 @@
 
   position: relative;
   margin-bottom: -85px;
-  margin-left: -100px;
+  margin-left: -120px;
   display: flex;
   justify-content:flex-end;
   padding: 5px;
@@ -79,8 +80,8 @@
 
 
 .p1 {
-  display:flex;
-  flex-wrap: wrap;
+  position: relative;
+  margin-top: 10px;
   background-color: var(--color-black-gold);
   color: var(--color-white);
   margin: 50px;
@@ -190,6 +191,34 @@
   height: 20px;
 }
 
-.link {
-  font: optional;
+.link1 {
+  position: relative;
+  margin-bottom: -50px;
+  margin-left: -20px;
+}
+.link2 {
+  position: relative;
+  margin-bottom: -50px;
+  margin-left: -35px;
+}
+.link3 {
+  position: relative;
+  margin-bottom: -80px;
+  margin-left: -10px;
+}
+.link4 {
+  position: relative;
+  margin-bottom: -50px;
+  margin-left: -10px;
+}
+
+.text {
+  color: var(--color-white);
+  margin: 100px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.text1 {
+  color: var(--color-white);
+  margin: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
