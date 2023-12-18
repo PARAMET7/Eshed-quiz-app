@@ -10,6 +10,13 @@
   --color-black : black;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .title {
   display: flex;
   align-content: center;
@@ -28,17 +35,6 @@
   background-color: var(--color-black-red);
 }
 
-.game4 {
-  position: relative;
-  margin-bottom: -85px;
-  margin-left: -150px;
-  display: flex;
-  justify-content:flex-end;
-  padding: 5px;
-  color: #e2930a;
-  background-color:var(--color-primary);
-  border-radius: 5px;
-}
 
 .game {
   position:absolute;
@@ -51,7 +47,9 @@
   background-color:var(--color-primary);
   border-radius: 5px;
 }
-
+.game:hover {
+  background-color: rgb(105, 101, 101);
+}
 
 .game1 {
   position: relative;
@@ -64,7 +62,9 @@
   background-color:var(--color-primary);
   border-radius: 5px;
 }
-
+.game1:hover {
+  background-color: rgb(105, 101, 101);
+}
 .game2 {
 
   position: relative;
@@ -77,7 +77,23 @@
   background-color:var(--color-primary);
   border-radius: 5px;
 }
-
+.game2:hover {
+  background-color: rgb(105, 101, 101);
+}
+.game4 {
+  position: relative;
+  margin-bottom: -85px;
+  margin-left: -150px;
+  display: flex;
+  justify-content:flex-end;
+  padding: 5px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+}
+.game4:hover {
+  background-color: rgb(105, 101, 101);
+}
 
 .p1 {
   position: relative;
@@ -245,25 +261,13 @@
   top: 110px;
   left : -80px;
 }
-
-.question-card__bookmark-button {
-  background-color: var(--padding-color);
-  margin: 1px;
-  padding: 2px;
-  position: absolute;
-  top: -20px;
-  right: 10px;
-  transform: translate (0%, -50%);
-  box-shadow: 1px 1px 3px;
+/*/=====================*/
+.check {
+  align-self: center;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.question-card__bookmark-button:hover {
-  background-color: var(--padding-color);
-  margin: 1px;
-  padding: 2px;
-  position: absolute;
-  top: -20px;
-  right: 10px;
-  transform: translate (0%, -50%);
-  box-shadow: 3px 3px 3px;
+.check:hover {
+  background-color: rgb(105, 101, 101);
 }
