@@ -245,3 +245,25 @@
   top: 110px;
   left : -80px;
 }
+
+.question-card__bookmark-button {
+  background-color: var(--padding-color);
+  margin: 1px;
+  padding: 2px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  transform: translate (0%, -50%);
+  box-shadow: 1px 1px 3px;
+}
+
+.question-card__bookmark-button:hover {
+  background-color: var(--padding-color);
+  margin: 1px;
+  padding: 2px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  transform: translate (0%, -50%);
+  box-shadow: 3px 3px 3px;
+}
