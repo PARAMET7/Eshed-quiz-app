@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App 2</title>
+    <link rel="stylesheet" href="form.css"  />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="title">
+        <h1>Quiz App 2</h1>
+      </section>
+      <nav></nav>
+    </header>
+    <main>
+      <form action="" data-js="addCards" name="addCards" id="addCards">
+        <label class="addQuestion">Your Question:</label>
+        <textarea
+          data-js="addQuestion"
+          name="addQuestion"
+          id="addQuestion"
+          cols="30"
+          rows="10"
+          maxlength="150"
+        ></textarea>
+        <p class="charsLeft" data-js="questionCharsLeft"></p>
+        <label for="addAnswer">Your answer:</label>
+        <textarea
+          data-js="addAnswer"
+          name="addAnswer"
+          id="addAnswer"
+          cols="30"
+          rows="10"
+          maxlength="150"
+        ></textarea>
+        <p class="charsLeft" data-js="answerCharsLeft"></p>
+        <label for="addTag">Tag:</label>
+        <input data-js="addTag" type="text" id="addTag" name="addTag" />
+
+        <button
+          data-js="submitBtn"
+          class="submit"
+          aria-label="submit button"
+          name="submitButton"
+          id="sumbitButton"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </form>
+    </main>
+    <footer class="foot">
+      <nev>
+        <button class="button1">
+          <img class="img1" src="https://www.iconarchive.com/download/i103430/paomedia/small-n-flat/house.1024.png">
+          HOME
+        </button>
+        <a href="./bookmarks.html">
+          <button  class="button2">
+           <img class="img1" src="https://cdn-icons-png.flaticon.com/512/786/786352.png">
+           REMARK
+          </button>
+        </a>
+        <a href="./form.html">
+          <button  class="button2">
+           <img class="img1" src="https://png.pngtree.com/png-vector/20190418/ourmid/pngtree-vector-plus-icon-png-image_956060.jpg">
+           FORM
+          </button>
+        </a>
+        <a href="./profile.html">
+          <button class="button3">
+           <img class="img1" src="https://banner2.cleanpng.com/20180701/yig/kisspng-computer-icons-silhouette-my-account-icon-5b388d48343f50.355577991530432840214.jpg">
+           ABOUT-ME
+          </button>
+        </a>
+
+
+      </nav>
+    </footer>
+  </body>
+</html>

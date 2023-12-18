@@ -1,0 +1,84 @@
+
+
+:root {
+  --color-black-gold: #e2930a;
+  --color-primary: rgb(237, 237, 128);
+  --padding-color: gray;
+  --color-white: #ffffff;
+  --border-radius: 4px;
+  --color-black-red: rgb(75, 55, 55);
+  --color-black : black;
+  --color-gray: rgb(105, 101, 101);
+}
+
+
+.title {
+  display: flex;
+  align-content: center;
+  color: var(--color-black-gold);
+
+
+}
+
+.button1 {
+  display: flex;
+  padding: 10px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+  padding: 30px 30px 30px;
+  flex-wrap: wrap;
+}
+
+.button2 {
+  padding: 10px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+  padding: 30px 30px 30px;
+  flex-wrap: wrap;
+}
+
+.button3 {
+  padding: 10px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+  padding: 30px 30px 30px;
+  flex-wrap: wrap;
+}
+
+.foot {
+  background-color: var(--color-white);
+  display: grid;
+  place-items :center;
+  padding: 20px;
+  box-shadow: var(--color-black) 20px
+}
+.img1 {
+  position: absolute;
+  margin-left: 13px;
+  width: 20px;
+  height: 20px;
+  bottom: -40px;
+}
+
+.img2 {
+  position: absolute;
+  right: 100px;
+  margin-top: -102px;
+  order: 1;
+  width: 20px;
+  height: 20px;
+}
+/*addQuestion=======================8*/
+#addCards{
+  background-color: var(--color-white);
+  display: grid;
+  place-items :left;
+}
+.addQuestion{
+  background-color: var(--color-white);
+  display: grid;
+  place-items :left;
+}

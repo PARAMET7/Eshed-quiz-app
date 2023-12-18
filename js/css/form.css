@@ -1,0 +1,21 @@
+
+
+:root {
+  --color-black-gold: #e2930a;
+  --color-primary: rgb(237, 237, 128);
+  --padding-color: gray;
+  --color-white: #ffffff;
+  --border-radius: 4px;
+  --color-black-red: rgb(75, 55, 55);
+  --color-black : black;
+  --color-gray: rgb(105, 101, 101);
+}
+
+
+.title {
+  display: flex;
+  align-content: center;
+  color: var(--color-black-gold);
+
+
+}

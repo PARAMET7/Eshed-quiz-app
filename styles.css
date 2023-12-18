@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "playfair";
+  src: url(../fonts/playfair.ttf) format(truetype);
+}
 
 :root {
   --color-black-gold: #e2930a;
@@ -8,6 +11,7 @@
   --border-radius: 4px;
   --color-black-red: rgb(75, 55, 55);
   --color-black : black;
+  --color-gray: rgb(105, 101, 101);
 }
 
 * {
@@ -47,8 +51,12 @@
   background-color:var(--color-primary);
   border-radius: 5px;
 }
+/*================the animatiom==============================*/
 .game:hover {
-  background-color: rgb(105, 101, 101);
+  background-color: var(--color-gray);
+  transition:  background-color 1000ms;
+  box-shadow: 0 0 0 0 var(--color-gray) 0px 10px 10px;
+  opacity: 70%;
 }
 
 .game1 {
@@ -63,7 +71,7 @@
   border-radius: 5px;
 }
 .game1:hover {
-  background-color: rgb(105, 101, 101);
+  background-color: var(--color-gray);
 }
 .game2 {
 
@@ -78,7 +86,7 @@
   border-radius: 5px;
 }
 .game2:hover {
-  background-color: rgb(105, 101, 101);
+  background-color: var(--color-gray);
 }
 .game4 {
   position: relative;
@@ -92,7 +100,7 @@
   border-radius: 5px;
 }
 .game4:hover {
-  background-color: rgb(105, 101, 101);
+  background-color: var(--color-gray);
 }
 
 .p1 {
@@ -270,4 +278,18 @@
 
 .check:hover {
   background-color: rgb(105, 101, 101);
+}
+
+.tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+.footer1{
+  display: flex;
+  justify-content : center;
 }
