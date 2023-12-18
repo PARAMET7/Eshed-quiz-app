@@ -13,21 +13,21 @@
 
 
 .title {
-  display: flex;
-  align-content: center;
-  color: var(--color-black-gold);
-
-
+  display: grid;
+  place-items: center;
+  color: var(--color-white);
+  background-color: var(--color-black-gold);
 }
 
+/*=======buttoms=======*/
+
 .button1 {
-  display: flex;
   padding: 10px;
   color: #e2930a;
   background-color:var(--color-primary);
   border-radius: 5px;
   padding: 30px 30px 30px;
-  flex-wrap: wrap;
+
 }
 
 .button2 {
@@ -36,7 +36,7 @@
   background-color:var(--color-primary);
   border-radius: 5px;
   padding: 30px 30px 30px;
-  flex-wrap: wrap;
+
 }
 
 .button3 {
@@ -45,22 +45,32 @@
   background-color:var(--color-primary);
   border-radius: 5px;
   padding: 30px 30px 30px;
-  flex-wrap: wrap;
+
+}
+
+.button4 {
+  padding: 10px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+  padding:  30px;
+
 }
 
 .foot {
+  align-items : center;
   background-color: var(--color-white);
-  display: grid;
-  place-items :center;
+  display: flex;
+  flex-direction : row-reverse;
   padding: 20px;
   box-shadow: var(--color-black) 20px
 }
 .img1 {
-  position: absolute;
+  position: grid;
   margin-left: 13px;
   width: 20px;
   height: 20px;
-  bottom: -40px;
+  bottom: 0px;
 }
 
 .img2 {
@@ -81,4 +91,5 @@
   background-color: var(--color-white);
   display: grid;
   place-items :left;
+  justify-content: space-between;
 }

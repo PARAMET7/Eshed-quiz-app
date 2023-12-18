@@ -1,59 +1,170 @@
 console.clear();
 
 
-// Answer Button
+const loc = window.location.pathname;
 
-// When the user clicks on the button the previously hidden answer should be displayed
-// When the user clicks this button again the answer is hidden again
-// The user can click on this button endlessly and the answer will either be displayed or hidden after each click
-// The toggle functionality should be applied by using a class which is named "hidden"
-// If the user clicks on an answer button, we want the button to say "hide answer"
-// when the answer is displayed and "show answer" when the answer is not displayed.
+const card = document.querySelector(".card-container");
 
-const questionCardAnswer = document.querySelector('[data-js="question-card-answer"]');
-const questionCardButtonToShowAndHideAnswer = document.querySelector('[data-js="question-card-button"]');
+const darkSwitch = document.querySelector('[data-js="darkMode"]');
+const body = document.querySelector("body");
+const main = document.querySelector("main");
 
-// take html class hidden of button and then if addeventlistener is triggered with a click, then it
-// doesnt hide the questionCardAnswer --> !hidden. "!" is for the negative version of an action
-questionCardButtonToShowAndHideAnswer.addEventListener("click", (e) => {
+const bbutton = document.querySelector('[data-js="bookmark"]');
+const bookmarkImage = document.querySelector('[data-js="bookmarkImage"]');
 
-    questionCardAnswer.hidden = !questionCardAnswer.hidden;
+const answerButton = document.querySelector('[data-js="answerButton"]');
+const answer = document.querySelector('[data-js="answerText"]');
+
+const form = document.querySelector('[data-js="addCards"]');
+const addQuestion = document.querySelector('[data-js="addQuestion"]');
+const addAnswer = document.querySelector('[data-js="addAnswer"]');
+const addTag = document.querySelector('[data-js="addTag"]');
+
+const charsQuestion = document.querySelector('[data-js="questionCharsLeft"]');
+const charsAnswer = document.querySelector('[data-js="answerCharsLeft"]');
+
+const submitButton = document.querySelector('[data-js="submitBtn"]');
+
+// storage for dark mode
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("dark")) {
+    //darkSwitch.checked = true;
+    body.classList.add("dark");
+    main.classList.add("dark");
+    //card.classList.add("darkcard");
+  } else {
+    //darkSwitch.checked = false;
+    body.classList.remove("dark");
+    main.classList.remove("dark");
+    //card.classList.remove("darkcard");
+  }
 });
+*/
 
-// here the text on the button changes depending if answer is showing or not
-questionCardButtonToShowAndHideAnswer.addEventListener("click", (event) => {
-
-    if (questionCardButtonToShowAndHideAnswer.textContent === "SHOW ANSWER") {
-        questionCardButtonToShowAndHideAnswer.textContent = "Hide Answer";
+if (loc === "profile.html") {
+  darkSwitch.addEventListener("change", () => {
+    localStorage.setItem("dark", this.checked);
+    if (darkSwitch.checked) {
+      body.classList.add("dark");
+      main.classList.add("bark");
+      //card.classList.add("darkcard");
+      //card.sytle.backgrounfColor = "dimgray";
+    } else {
+      localStorage.removeItem("dark");
+      body.classList.remove("dark");
+      main.classList.remove("bark");
+      //card.classList.remove("darkcard");
+      //card.style.backgroundColor = burlywood;
     }
-    else {
-        questionCardButtonToShowAndHideAnswer.textContent = "SHOW ANSWER"
+  });
+}
+
+if (loc === "index.html" || loc === "/bookmark.html") {
+  // Bookmark toggle activate
+  let bCounter = 1;
+  bbutton.addEventListener("click", () => {
+    if (bCounter % 2 != 0) {
+      bookmarkImage.src = "./components/bm.png";
+      bCounter++;
+    } else {
+      bookmarkImage.src = "./components/bmw.png";
+      bCounter--;
     }
-});
+  });
 
-// Bookmark button
-// The user can click on the bookmark endlessly and the bookmark will toggle between both stylings
-const questionCardBookmarkButton = document.querySelector('[data-js="question-card-bookmark-button"]');
-const questionCardBookmarkPicture = document.querySelector('[data-js="question-card-bookmark-picture"]');
-
-// make a variable for condition whether button is checked or not:
-let questionCardBookmarked = false;
-// make it false and unfilled by default!
-
-questionCardBookmarkButton.addEventListener("click", (eventBookmark) => {
-
-    // say that if let questionCardBookmarked is as defined above (=default/false/unfilled) then...
-    if (questionCardBookmarked) {
-        questionCardBookmarkPicture.src = "./resources/bookmark_unfilled.png";
-        questionCardBookmarkPicture.alt = "filled-bookmark-pic";
+  //answer toggle activate
+  let aCounter = 1;
+  answerButton.addEventListener("click", () => {
+    if (aCounter % 2 != 0) {
+      answer.removeAttribute("hidden");
+      answerButton.textContent = "Hide answer";
+      aCounter++;
+    } else {
+      answer.setAttribute("hidden", "");
+      answerButton.textContent = "Show answer";
+      aCounter--;
     }
+  });
+}
+//form
+if (loc === "form.html") {
+  const path = window.location.pathname;
 
-    // if questionCardBookmarked is true/filled (!questionCardBookmarked = false) then...
-    else if (!questionCardBookmarked) {
-        questionCardBookmarkPicture.src = "./resources/bookmark_filled.png";
-        questionCardBookmarkPicture.alt = "unfilled-bookmark-pic";
-    }
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const section = document.createElement("section");
+    section.classList.add("card-container");
 
-    // then say if first condition was true (questionBookMarked = false) then change next time when user clicks:
-    questionCardBookmarked = !questionCardBookmarked
-});
+    const newBookmark = document.createElement("button");
+    //newBookmark.setAttribute('data-js="bookmark"');
+    newBookmark.classList.add("bookmark");
+    section.append(newBookmark);
+
+    const newBookImage = document.createElement("img");
+    newBookImage.src = "./components/bmw.png";
+    newBookmark.append(newBookImage);
+
+    const newArticle = document.createElement("article");
+    newArticle.classList.add("card-article");
+    section.append(newArticle);
+
+    const newQuestion = document.createElement("p");
+    newArticle.append(newQuestion);
+    newQuestion.textContent = addQuestion.value;
+
+    const newAnswerButton = document.createElement("button");
+    newAnswerButton.classList.add("check");
+    newAnswerButton.textContent = "Show Answer";
+    newArticle.append(newAnswerButton);
+
+    const newAnswerText = document.createElement("p");
+    newAnswerText.classList.add("solution");
+    newAnswerText.setAttribute("hidden", "");
+    newAnswerText.textContent = addAnswer.value;
+    newArticle.append(newAnswerText);
+
+    const newTagsContainer = document.createElement("p");
+    newTagsContainer.classList.add("tags-container");
+    section.append(newTagsContainer);
+
+    const newTags = document.createElement("ul");
+    newTags.classList.add("tags");
+    newTagsContainer.append(newTags);
+
+    const newList = document.createElement("li");
+    newList.textContent = addTag.value;
+    newTags.append(newList);
+
+    //newArticle.append(newAnswerButton);
+
+    main.append(section);
+    form.reset();
+  });
+
+  // Character Counts to textfields
+
+  addQuestion.addEventListener("input", () => {
+    charsQuestion.textContent =
+      150 - addQuestion.value.length + " characters left";
+    addQuestion.value.length === 150
+      ? charsQuestion.classList.add("red")
+      : charsQuestion.classList.remove("red");
+  });
+
+  addAnswer.addEventListener("input", () => {
+    charsAnswer.textContent = 150 - addAnswer.value.length + " characters left";
+    addAnswer.value.length === 150
+      ? charsAnswer.classList.add("red")
+      : charsAnswer.classList.remove("red");
+  });
+}
+
+// sumbit button
+if (loc === "form.html") {
+  submitButton.addEventListener("click", () => {
+    submitButton.classList.toggle("mousedown");
+    console.log("test");
+  });
+}
+console.log(loc);
