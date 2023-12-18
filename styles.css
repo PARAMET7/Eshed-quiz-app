@@ -187,6 +187,15 @@
   flex-wrap: wrap;
 }
 
+.button4 {
+  padding: 10px;
+  color: #e2930a;
+  background-color:var(--color-primary);
+  border-radius: 5px;
+  padding: 30px 30px 30px;
+  flex-wrap: wrap;
+}
+
 .foot {
   background-color: var(--color-white);
   display: flex;
