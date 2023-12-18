@@ -120,7 +120,7 @@
 
 }
 
-/*@media (min-width: 600px) {
+@media (min-width: 600px) {
   .p {
 
     color: var(--color-white);
@@ -133,7 +133,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-}*/
+}
 .button1 {
 
   display: flex;
@@ -221,4 +221,27 @@
   color: var(--color-white);
   margin: 30px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile__image {
+  border-radius: 50%;
+  max-width: 20%;
+  height: auto;
+  display: flex;
+  justify-content : right;
+}
+
+.my-section{
+  display: grid;
+  justify-content : center;
+  flex-direction: row-reverse;
+  align-items : end;
+  order: -1;
+}
+
+#pic {
+  position: absolute;
+  margin-left: 100px;
+  top: 110px;
+  left : -80px;
 }
