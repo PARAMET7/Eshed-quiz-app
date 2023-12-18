@@ -8,12 +8,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="./js/toggele.js" defer></script>
 </head>
 
 <body class="background">
   <header class="title">QUIZ APP - CSS symbols</header>
 
   <main>
+    <section class="settings-section">
+      <h2>Settings:</h2>
+      <body>
+        <ul>
+          <li class="settings__option">
+            <h4>Dark mode:</h4>
+            <label class="switch">
+              <input data-js="darkModeToggle" type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </body>
+    </section>
     <section class="my-section">
       <div class="profile__content">
         <img
@@ -22,21 +37,14 @@
           class="profile__image"
           id = "pic"
         />
-        <h2 class="profile__title"></h2>
       </div>
-      <div class="settings__dark-mode-wrapper">
-        <label for="dark-mode" class="settings__dark-mode-label"
-          >Dark Mode</label
-        >
-        <div class="switch-container">
-          <input id="dark-mode" type="checkbox" />
-          <div class="switch"></div>
-        </div>
-      </div>
-      <section class="p2" class="title">
-        <img class="img2" src="https://cdn-icons-png.flaticon.com/512/786/786352.png">
+      <h2 class="profile__title"></h2>
 
-About Me   :          <a class="link1" href="https://www.w3schools.com/cssref/sel_class.php">
+    <section class="p2" class="title">
+        <img class="img3" src="https://cdn-icons-png.flaticon.com/512/786/786352.png">
+
+          <a class="link1" href="https://www.w3schools.com/cssref/sel_class.php">
+            About Me   :
 
           </a>
           <p class="text1">

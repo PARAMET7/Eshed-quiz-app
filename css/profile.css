@@ -1,0 +1,30 @@
+
+
+:root {
+  --color-black-gold: #e2930a;
+  --color-primary: rgb(237, 237, 128);
+  --padding-color: gray;
+  --color-white: #ffffff;
+  --border-radius: 4px;
+  --color-black-red: rgb(75, 55, 55);
+  --color-black : black;
+  --color-gray: rgb(105, 101, 101);
+}
+
+
+.title {
+  display: grid;
+  place-items: center;
+  color: var(--color-white);
+  background-color: var(--color-black-gold);
+
+.img2 {
+  position: flex;
+  place-items: center;
+  right: 100px;
+  margin-top: -165px;
+  order: 1;
+  width: 20px;
+  height: 20px;
+}
+
