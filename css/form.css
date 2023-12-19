@@ -93,3 +93,7 @@
   place-items :left;
   justify-content: space-between;
 }
+
+.background {
+  background-color: var(--color-gray);
+}
