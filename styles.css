@@ -392,3 +392,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* .card__bookmark {
+  position: absolute;
+  right: 100px;
+  margin-top: -102px;
+  order: 1;
+  width: 20px;
+  height: 20px;
+
+} */
