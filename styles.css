@@ -2,6 +2,10 @@
   font-family: "playfair";
   src: url(../fonts/playfair.ttf) format(truetype);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --color-black-gold: #e2930a;
@@ -9,7 +13,7 @@
   --padding-color: gray;
   --color-white: #ffffff;
   --border-radius: 4px;
-  --color-black-red: rgb(75, 55, 55);
+  --color-black-red: rgb(166, 171, 23);
   --color-black : black;
   --color-gray: rgb(105, 101, 101);
 }
@@ -402,3 +406,18 @@ input:checked + .slider:before {
   height: 20px;
 
 } */
+
+/* nav bar css  21-12-23 ========*/
+.nav-bar {
+
+  background-color: var(--color-black-gold);
+  display: flex;
+  width: 100vw;
+  height: 8vh;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-bar img {
+  height: 25px;
+}
