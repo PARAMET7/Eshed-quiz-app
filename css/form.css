@@ -8,7 +8,7 @@
   --border-radius: 4px;
   --color-black-red: rgb(75, 55, 55);
   --color-black : black;
-  --color-gray: rgb(105, 101, 101);
+  --color-gray: rgb(195, 191, 191);
 }
 
 
@@ -111,4 +111,66 @@
 }
 .nav-bar img {
   height: 25px;
+}
+
+.submit {
+  text-indent: 500%;
+  margin: 10px;
+  background-color: var(--color-gray);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+  box-shadow: 0 5px 10px 1px rgb(214, 232, 15);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.submit:hover {
+  box-shadow: 0 5px 14px 6px rgb(164, 162, 162);
+  /* padding: 30px 30px 30px; */
+}
+
+.form-container{
+
+  box-shadow: 0 5px 10px 1px rgb(164, 162, 162);
+  padding: 10px;
+  margin: 20px;
+  transition: box-shadow 300ms ease-in-out;
+  border-radius: 10px;
+}
+#addQuestion {
+  display: flex;
+  align-self: center;
+  box-shadow: 0 5px 10px 1px rgb(39, 223, 18);
+  padding: 10px;
+  margin: 10px;
+  transition: box-shadow 300ms ease-in-out;
+  border-radius: 10px;
+}
+#addAnswer {
+  display: flex;
+  align-self: center;
+  box-shadow: 0 5px 10px 1px rgb(55, 20, 137);
+  padding: 10px;
+  margin: 10px;
+  transition: box-shadow 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+#addTag {
+  display: flex;
+  align-self: center;
+  box-shadow: 0 5px 10px 1px rgb(147, 5, 5);
+  padding: 10px;
+  margin: 7px;
+  transition: box-shadow 300ms ease-in-out;
+  border-radius: 10px;
+}
+
+.charsLeft {
+  display: flex;
+  align-self: flex-end;
+}
+.red {
+  color: red;
 }
