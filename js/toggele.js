@@ -54,7 +54,7 @@ const buttonBookmark = document.querySelector(".card__bookmark");
 let index = 0;
 // const bookmarkImg = document.getElementById(“bookmark-image”);
 const bookmarkImg = document.querySelector(".img2");
-const images = ["./resources/2.png", "./resources/1.png"];
+const images = ["./resources/bookmark_transparent_white.png", "./resources/bookmark_filled.png"];
 buttonBookmark.addEventListener("click", () => {
   index = 1 - index; // Toggles between 0=filled and 1=not filled
   bookmarkImg.src = images[index];
@@ -70,3 +70,28 @@ buttonBookmark.addEventListener("click", () => {
 //     buttonAnswer.textContent = answer.hidden ? “Show Answer” : “Hide Answer”;
 //   });
 // });
+
+
+// showing answer//
+// TOGGLE ANSWER //
+
+
+const answerButton = document.querySelector("[data-js=answer-button]");
+
+// Get all elements with the class "answer-button"
+const answerButtons = document.querySelectorAll("[data-js=answer-button]");
+
+
+answerButton.addEventListener("click", function () {
+  // Get the h4 element inside the question card
+  const answerText = document.querySelector(".question-cards h4");
+
+  // Toggle the 'hidden' class on the h4 element
+  answerText.classList.toggle("hidden");
+
+  if (answerButton.innerText === "Show Answer") {
+    answerButton.innerText = "Hide Answer";
+  } else {
+    answerButton.innerText = "Show Answer";
+  }
+});

@@ -97,3 +97,18 @@
 .background {
   background-color: var(--color-gray);
 }
+/*nav bar 24-12-23=======================*/
+
+.nav-bar {
+
+  background-color: var(--color-black-gold);
+  display: flex;
+  width: 100vw;
+  height: 8vh;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-bar img {
+  height: 25px;
+}
