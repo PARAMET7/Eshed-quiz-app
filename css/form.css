@@ -245,6 +245,8 @@ img.bookmark-img {
 }
 
 .card-article {
+  padding: auto;
+  color: var(--);
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -524,4 +526,35 @@ form {
 
 .profileimg {
   width: 200px;
+}
+/*===global===*/
+
+:root {
+  --background: antiquewhite;
+  --cards: bisque;
+  --darkBackground: rgb(53, 52, 52);
+  --lightgrey: lightgrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  background-color: lightgray;
+}
+
+a img {
+  transition: scale 300ms ease-in-out;
+}
+
+a:hover img {
+  scale: 1.28;
 }
