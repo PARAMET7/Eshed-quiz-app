@@ -9,48 +9,50 @@
   </head>
   <body class="background">
     <header class="title">
-
         <h1>Quiz App 2</h1>
     </header>
-    <main>
-      <div class="form-container" data-js="form-container">
-        <form action="" data-js="addCards" name="addCards" id="addCards">
-          <label class="addQuestion">Your Question:</label>
-          <textarea
-            data-js="addQuestion"
-            name="addQuestion"
-            id="addQuestion"
-            cols="30"
-            rows="10"
-            maxlength="150"
-          ></textarea>
-          <p class="charsLeft" data-js="questionCharsLeft"></p>
-          <label for="addAnswer">Your answer:</label>
-          <textarea
-            data-js="addAnswer"
-            name="addAnswer"
-            id="addAnswer"
-            cols="30"
-            rows="10"
-            maxlength="150"
-          ></textarea>
-          <p class="charsLeft" data-js="answerCharsLeft"></p>
-          <label for="addTag">Tag:</label>
-          <input data-js="addTag" type="text" id="addTag" name="addTag" />
 
-          <button
-            data-js="submitBtn"
-            class="submit"
-            aria-label="submit button"
-            name="submitButton"
-            id="sumbitButton"
-            type="submit"
-          >
-            SUBMIT
-          </button>
-
-      </form>
-    </div>
+            <main>
+              <form action="" data-js="addCards" name="addCards" id="addCards">
+                <label for="addQuestion">Your Question:</label>
+                <textarea
+                  data-js="addQuestion"
+                  name="addQuestion"
+                  id="addQuestion"
+                  cols="30"
+                  rows="10"
+                  maxlength="150"
+                ></textarea>
+                <p class="charsLeft" data-js="questionCharsLeft"></p>
+                <label for="addAnswer">Your answer:</label>
+                <textarea
+                  data-js="addAnswer"
+                  name="addAnswer"
+                  id="addAnswer"
+                  cols="30"
+                  rows="10"
+                  maxlength="150"
+                ></textarea>
+                <p class="charsLeft" data-js="answerCharsLeft"></p>
+                <label for="addTag">Tag:</label>
+                <input
+                  data-js="addTag"
+                  type="text"
+                  id="addTag"
+                  name="addTag"
+                  required
+                />
+                <button
+                  data-js="submitBtn"
+                  class="submit"
+                  aria-label="submit button"
+                  name="submitButton"
+                  id="sumbitButton"
+                  type="submit"
+                >
+                  SUBMIT
+                </button>
+              </form>
     </main>
     <footer class="foot">
       <div class="nav-bar">
