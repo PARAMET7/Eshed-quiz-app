@@ -113,14 +113,12 @@
 }
 
 .submit {
-  text-indent: 500%;
-  margin: 10px;
-  background-color: var(--color-gray);
+  background-color: var(--color-primary);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 12px;
   display: flex;
   align-self: center;
-  box-shadow: 0 5px 10px 1px rgb(214, 232, 15);
+  box-shadow: 0 5px 10px 1px rgb(164, 162, 162);
   transition: box-shadow 300ms ease-in-out;
 }
 

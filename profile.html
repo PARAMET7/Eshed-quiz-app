@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <script src="./js/profile.js" defer></script>
+  </head>
 
-
-  <link rel="stylesheet" href="styles.css">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="./js/index.js" defer></script>
-</head>
-
-<body class="background">
-  <header class="title">QUIZ APP - CSS symbols</header>
-
-  <main>
-    <section class="settings-section">
-      <h2>Settings:</h2>
-      <body>
-        <ul>
-          <li class="settings__option">
-            <h4>Dark mode:</h4>
+  <body class="background">
+    <div>
+      <article class="title">
+        <h1>QUIZ APP - CSS symbols</h1>
+      </article>
+    </div>
+    <main>
+      <section class="profile-container"  id="kacke">
+          <section class="profile -user">
+            <p>
+              <img
+                src="https://atlas-content-cdn.pixelsquid.com/stock-images/8-bit-mario-game-character-0M1yDO9-600.jpg"
+                alt="super"
+                class="profile__image"
+                id = "pic"
+              />
+            </p>
+            <p>
+              <h2>The Quiz Dode</h2>
+            </p>
+          </section>
+          <article class="profile-profile-headlines">
+            <h3>About me:</h3>
+            <p>
+              learning about the life and what ever comes, FREE spirit!
+            </p>
+          </article>
+          <section class="profile -counters">
+            <article class="qcounter">
+              <img class="profile__image1" src="./resources/question.png" alt="questionmark"><p>Counter</p>
+            </article>
+            <article class="bcounter">
+              <img class="profile__image1" src="./resources/bookmark_filled.png" alt="bookmark"><p>Counter</p>
+            </article>
+          </section>
+        <hr>
+          <h3 class="profile -profile-headlines">Settings:</h3>
+          <section class="profile -settings">
+            <p>Dark Mode:</p>
             <label class="switch">
-              <input data-js="darkMode" type="checkbox" checked />
+              <input data-js="darkMode" type="checkbox" id="darkMode" name="darkMode">
               <span class="slider round"></span>
             </label>
-          </li>
-        </ul>
-      </body>
-    </section>
-    <section class="my-section">
-      <div class="profile__content">
-        <img
-          src="https://atlas-content-cdn.pixelsquid.com/stock-images/8-bit-mario-game-character-0M1yDO9-600.jpg"
-          alt="super"
-          class="profile__image"
-          id = "pic"
-        />
-      </div>
-      <h2 class="profile__title"></h2>
-
-    <section class="p2" class="title">
-        <img class="img3" src="https://cdn-icons-png.flaticon.com/512/786/786352.png">
-
-          <a class="link1" href="https://www.w3schools.com/cssref/sel_class.php">
-            About Me   :
-
-          </a>
-          <p class="text1">
-            Eshed Yuval Levy
-          </p>
+          </section>
       </section>
-    </section>
-
-    <section>
-      <p class="text">
-        learning about the life and what ever comes, FREE spirit!
-      </p>
-
-  </main>
-  <nav>
-    <footer class="foot">
-      <div class="nav-bar">
-        <div class="nav-item-1">
-          <a href="./index.html">
-            <h2><img src="./resources/home.png" alt="home icon" /></h2>
+    </main>
+    <nav>
+      <footer class="foot">
+        <div class="nav-bar">
+          <div class="nav-item-1">
+            <a href="./index.html">
+              <h2><img src="./resources/home.png" alt="home icon" /></h2>
+            </a>
+          </div>
+          <div class="nav-item-2">
+            <a href="./bookmarks.html">
+              <h2><img src="./resources/bookmark_filled.png" alt="bookmark icon" /></h2>
+            </a>
+          </div>
+          <div class="nav-item-4">
+            <a href="./form.html">
+              <h2><img id="nav-item-4" src="./resources/addForm.png" alt="form icon" /></h2>
+            </a>
+        </div>
+        <div class="nav-item-3">
+          <a href="./profile.html">
+            <h2><img id="nav-item-3"  src="./resources/profile_filled.png" alt="profile icon" /></h2>
           </a>
         </div>
-        <div class="nav-item-2">
-          <a href="./bookmarks.html">
-            <h2><img src="./resources/bookmark_filled.png" alt="bookmark icon" /></h2>
-          </a>
-        </div>
-        <div class="nav-item-4">
-          <a href="./form.html">
-            <h2><img id="nav-item-4" src="./resources/addForm.png" alt="form icon" /></h2>
-          </a>
-       </div>
-       <div class="nav-item-3">
-        <a href="./profile.html">
-          <h2><img id="nav-item-3"  src="./resources/profile_filled.png" alt="profile icon" /></h2>
-        </a>
       </div>
-    </div>
-    </footer>
+      </footer>
 
-  </nav>
+    </nav>
 
-</body>
+  </body>
 </html>
